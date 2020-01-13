@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIT365_W2_MathQuiz", "CIT365_W2_MathQuiz\CIT365_W2_MathQuiz.csproj", "{D7B4A656-65BF-4DB9-BCC2-AECB197EE204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B4A656-65BF-4DB9-BCC2-AECB197EE204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B4A656-65BF-4DB9-BCC2-AECB197EE204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B4A656-65BF-4DB9-BCC2-AECB197EE204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B4A656-65BF-4DB9-BCC2-AECB197EE204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BFC384D-1345-4DEC-876A-93FD68A3698D}
+	EndGlobalSection
+EndGlobal
