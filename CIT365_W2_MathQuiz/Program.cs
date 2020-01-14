@@ -14,7 +14,7 @@ namespace CIT365_W2_MathQuiz
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            // Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
