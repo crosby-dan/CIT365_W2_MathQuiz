@@ -86,12 +86,12 @@ namespace CIT365_W2_MathQuiz
                 progressBar1.Value = intQuizTimer;
                 toolStripStatusLabel1.Text = String.Format("Seconds remaining {0}", +intMaxTimer - intQuizTimer);
                 // If all answers correct we can skip the submit button.
-                if (UpdateScores() == 4) { Submit(); };
             }
             else
             {
                 timer1.Enabled = false;
                 toolStripStatusLabel1.Text = "Time's up!";
+                UpdateScores(true);
                 MessageBox.Show("You ran out of time, please try again!","Time's up!",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel1.Visible = false;
                 BtnStartQuiz.Visible = true;
@@ -190,7 +190,7 @@ namespace CIT365_W2_MathQuiz
                 nud4.BackColor = Color.White;
             }
 
-            toolStripStatusLabel2.Text = String.Format("[{0}/4]", intCorrect);
+            toolStripStatusLabel2.Text = String.Format("  [{0}/4]   ", intCorrect);
 
             return intCorrect;
         }
@@ -230,7 +230,8 @@ namespace CIT365_W2_MathQuiz
 
         private void answer_Validate(object sender, EventArgs e)
         {
-            UpdateScores();
+            //The immediate validation was causing issues when answers were incorrect, so I'm now validating this either through the timer (1 second intervals) or when submit is clicked.
+            //UpdateScores();
         }
     }
 }
