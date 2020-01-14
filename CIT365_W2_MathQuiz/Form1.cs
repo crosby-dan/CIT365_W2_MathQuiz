@@ -16,5 +16,23 @@ namespace CIT365_W2_MathQuiz
         {
             InitializeComponent();
         }
+
+        private void btnStartQuiz_Click(object sender, EventArgs e)
+        {
+
+            panel1.Visible = true;
+            btnPauseQuiz.Visible = true;
+            btnStartQuiz.Visible = false;
+
+
+        }
+        private void btnPauseQuiz_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            btnPauseQuiz.Visible = false;
+            btnStartQuiz.Visible = true;
+
+        }
+
     }
 }
